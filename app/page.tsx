@@ -1,6 +1,8 @@
 import { sql } from "@vercel/postgres";
 import LogForm from "./LogForm";
 
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
   // Fetch logs from Postgres
   const { rows } = await sql`SELECT * FROM ojt_logs ORDER BY date DESC`;
