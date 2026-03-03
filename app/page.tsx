@@ -29,11 +29,11 @@ export default async function Page() {
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div className="border-l-4 border-green-500 pl-4">
             <p className="text-xs uppercase text-gray-500 font-bold">Done</p>
-            <p className="text-3xl font-mono font-bold">{totalHours.toFixed(1)}h</p>
+            <p className="text-3xl font-mono font-bold">{totalHours.toFixed(0)}h</p>
           </div>
           <div className="border-l-4 border-red-500 pl-4">
             <p className="text-xs uppercase text-gray-500 font-bold">Left</p>
-            <p className="text-3xl font-mono font-bold text-red-600">{remainingHours.toFixed(1)}h</p>
+            <p className="text-3xl font-mono font-bold text-red-600">{remainingHours.toFixed(0)}h</p>
           </div>
         </div>
         <div className="mt-6 pt-4 border-t text-sm text-gray-600">
